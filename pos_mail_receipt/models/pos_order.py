@@ -14,7 +14,7 @@ _logger = logging.getLogger(__name__)
 class PosOrder(models.Model):
     _inherit = "pos.order"
 
-    email_receipt_sent = fields.Boolean()
+    email_receipt_sent = fields.Boolean(readonly=True)
 
     @api.model
     def send_mail_receipt(

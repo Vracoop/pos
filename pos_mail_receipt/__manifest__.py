@@ -8,7 +8,11 @@
     "website": "https://github.com/OCA/pos",
     "license": "AGPL-3",
     "depends": ["point_of_sale"],
-    "data": ["templates/assets.xml", "data/email.xml"],
+    "data": [
+        "templates/assets.xml",
+        "data/email.xml",
+        "views/pos_order_form_mail_receipt_sent.xml",
+    ],
     "qweb": ["static/src/xml/pos.xml"],
     "installable": True,
 }
