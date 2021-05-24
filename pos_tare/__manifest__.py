@@ -3,7 +3,7 @@
 {
     "name": "Point Of Sale - Tare",
     "summary": "Manage Tare in Point Of Sale module",
-    "version": "12.0.1.0.2",
+    "version": "12.0.1.0.3",
     "category": "Point of Sale",
     "author": "GRAP, Le Nid, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/pos",
@@ -16,10 +16,14 @@
         "views/templates.xml",
         "views/view_pos_config.xml",
         "views/view_pos_order.xml",
+        "views/view_product_template.xml",
         "data/barcode_rule.xml",
     ],
     "qweb": [
         "static/src/xml/pos_tare.xml",
+    ],
+    "demo": [
+        "demo/product_product.xml",
     ],
     "installable": True,
 }
