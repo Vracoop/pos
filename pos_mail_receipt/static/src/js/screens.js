@@ -48,9 +48,16 @@ odoo.define("pos_mail_receipt.screens", function (require) {
             var self = this;
             options = options || {};
             var timeout = typeof options.timeout === 'number' ? options.timeout : 7500;
-            this.$('.button.email').addClass("highlight");
+            var timeout_db_sync = typeof options.timeout_db_sync === 'number' ? options.timeout : 5000;
+            var i = 0
+            var waiting_interval = 1000
             while (self.pos.get("synch").state == "connecting") {
-                await sleep(1000);
+                await sleep(waiting_interval);
+                i = i + waiting_interval
+                if (i >= timeout_db_sync){
+                    self.gui.show_popup('error', _t('Timeout syncronising the database'));
+                    return
+                }
             }
             self.lock_screen(true);
             return rpc.query({
