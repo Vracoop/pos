@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* pos_tare
+#	* pos_tare
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-21 13:36+0000\n"
+"PO-Revision-Date: 2023-03-17 16:10+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: pos_tare
 #. openerp-web
@@ -165,7 +165,7 @@ msgstr "Pagamento bon buoni pasto"
 #. module: pos_tare
 #: selection:barcode.rule,type:0
 msgid "Package"
-msgstr "Collo"
+msgstr "Imballaggio"
 
 #. module: pos_tare
 #. openerp-web
@@ -218,7 +218,7 @@ msgstr "Modello prodotto"
 #: code:addons/pos_tare/static/src/xml/pos_tare.xml:82
 #, python-format
 msgid "Qty"
-msgstr "Q.tà"
+msgstr "Qta."
 
 #. module: pos_tare
 #. openerp-web
@@ -234,8 +234,7 @@ msgstr "Leggere un codice a barre per impostare la tara"
 
 #. module: pos_tare
 #: model:ir.model.fields,help:pos_tare.field_pos_config__iface_tare_method
-msgid ""
-"Select tare method:\n"
+msgid "Select tare method:\n"
 "* 'manual' : the scale screen has an extra tare input field;\n"
 "* 'barecode' : (scan a barcode to tare the selected order line;\n"
 "* 'both' : manual input and barcode methods are enabled;"
@@ -249,9 +248,7 @@ msgstr ""
 #. module: pos_tare
 #: model:ir.model.fields,help:pos_tare.field_product_product__tare_weight
 #: model:ir.model.fields,help:pos_tare.field_product_template__tare_weight
-msgid ""
-"Set here Constant tare weight for the given product. This tare will be "
-"substracted when the product is weighted"
+msgid "Set here Constant tare weight for the given product. This tare will be substracted when the product is weighted"
 msgstr ""
 "Impostare qui il peso tara costante per un certo prodotto. Questa tara verrà "
 "sottratta quando il prodotto viene pesato"
@@ -294,8 +291,7 @@ msgstr "Peso tara"
 #. openerp-web
 #: code:addons/pos_tare/static/src/js/screens.js:98
 #, python-format
-msgid ""
-"The quantity is lower or equal to zero. Are you sure you want to continue ?"
+msgid "The quantity is lower or equal to zero. Are you sure you want to continue ?"
 msgstr "La quantità è inferiore o uguale a zero. Sicuri di voler continuare?"
 
 #. module: pos_tare
@@ -348,9 +344,7 @@ msgstr "Prodotto pesato"
 #. openerp-web
 #: code:addons/pos_tare/static/src/js/screens.js:186
 #, python-format
-msgid ""
-"You can not set the tare. To be able to set the tare manually you have to "
-"change the tare input method in the POS configuration."
+msgid "You can not set the tare. To be able to set the tare manually you have to change the tare input method in the POS configuration."
 msgstr ""
 "Non si può impostare qui la tara. Per abilitare l'inserimento manuale della "
 "tara serve modificare il metodo di inserimento della tara nella "
